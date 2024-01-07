@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,11 +6,12 @@
     <title>Логин</title>
 </head>
 <style>
-    form{
-        padding-top:4%;
-        padding-left:30%;
-        padding-right:30%;
+    form {
+        padding-top: 4%;
+        padding-left: 30%;
+        padding-right: 30%;
     }
+
     input[type=text], input[type=password] {
         width: 100%;
         padding: 15px;
@@ -39,43 +39,43 @@
     }
 
     button:hover {
-        opacity:1;
+        opacity: 1;
     }
 
 </style>
 <body>
 
-    <form class="form" action="{{ route('login') }}" method="post" >
-        @csrf
-            <div class="container">
-                <h1>Войдите в аккаунт</h1>
+<form class="form" action="{{ route('login') }}" method="post">
+    @csrf
+    <div class="container">
+        <h1>Войдите в аккаунт</h1>
 
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Введите вашу почту" name="email" required>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Введите вашу почту" name="email" required>
 
-                <label for="psw"><b>Пароль</b></label>
-                <input type="password" placeholder="Введите пароль" name="password" required>
+        <label for="psw"><b>Пароль</b></label>
+        <input type="password" placeholder="Введите пароль" name="password" required>
 
-                <div class="clearfix">
-                    <button type="submit" class="signupbtn">Вход</button>
-                </div>
-                @if(session('success'))
-                    <div class="alert alert-success">
-                        {{ session('success') }}
-                    </div>
-                @endif
-
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                {{ $error }}
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
+        <div class="clearfix">
+            <button type="submit" class="signupbtn">Вход</button>
+        </div>
+        @if(session('success'))
+            <div class="alert alert-success">
+                {{ session('success') }}
             </div>
-        </form>
+        @endif
+
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        {{ $error }}
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+    </div>
+</form>
 
 </body>
 </html>

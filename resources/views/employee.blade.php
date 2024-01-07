@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Создание сотрудника</title>
     <style>
-        form{
-            padding-top:4%;
-            padding-left:30%;
-            padding-right:30%;
+        form {
+            padding-top: 4%;
+            padding-left: 30%;
+            padding-right: 30%;
         }
+
         input[type=text], input[type=password] {
             width: 100%;
             padding: 15px;
@@ -39,7 +40,7 @@
         }
 
         button:hover {
-            opacity:1;
+            opacity: 1;
         }
 
     </style>

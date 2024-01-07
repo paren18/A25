@@ -7,11 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Отработанные часы</title>
     <style>
-        form{
-            padding-top:4%;
-            padding-left:30%;
-            padding-right:30%;
+        form {
+            padding-top: 4%;
+            padding-left: 30%;
+            padding-right: 30%;
         }
+
         input[type=text] {
             width: 100%;
             padding: 15px;
@@ -21,7 +22,7 @@
             background: #f1f1f1;
         }
 
-        input[type=text]:focus{
+        input[type=text]:focus {
             background-color: #ddd;
             outline: none;
         }
@@ -38,9 +39,9 @@
         }
 
         button:hover {
-            opacity:1;
+            opacity: 1;
         }
-</style>
+    </style>
 </head>
 <body>
 
