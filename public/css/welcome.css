@@ -1,0 +1,13 @@
+.form {
+    text-align: center;
+    display: grid;
+    padding-top: 10%;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.form button {
+    margin-bottom: 15px;
+    width: 80%;
+    height: 55px;
+}

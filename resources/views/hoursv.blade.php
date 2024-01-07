@@ -55,6 +55,7 @@
         <div class="clearfix">
             <button type="submit" class="signupbtn">Отправить</button>
         </div>
+        <a href="{{ route('welcome') }}" style="text-decoration: none; padding: 10px 20px; background-color: green; color: #fff; border-radius: 5px; display: inline-block;">На главную</a>
         @if(session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
@@ -71,6 +72,7 @@
             </div>
         @endif
     </div>
+
 </form>
 </body>
 </html>

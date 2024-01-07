@@ -6,44 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Создание сотрудника</title>
-    <style>
-        form {
-            padding-top: 4%;
-            padding-left: 30%;
-            padding-right: 30%;
-        }
-
-        input[type=text], input[type=password] {
-            width: 100%;
-            padding: 15px;
-            margin: 5px 0 22px 0;
-            display: inline-block;
-            border: none;
-            background: #f1f1f1;
-        }
-
-        input[type=text]:focus, input[type=password]:focus {
-            background-color: #ddd;
-            outline: none;
-        }
-
-        /* Установите стиль для всех кнопок */
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
-            margin: 8px 0;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            opacity: 0.9;
-        }
-
-        button:hover {
-            opacity: 1;
-        }
-
-    </style>
+    <link rel="stylesheet" href="css/employee.css">
 
 </head>
 <body>
@@ -61,6 +24,7 @@
         <div class="clearfix">
             <button type="submit" class="signupbtn">Регистрация</button>
         </div>
+        <a href="{{ route('welcome') }}" style="text-decoration: none; padding: 10px 20px; background-color:green; color: #fff; border-radius: 5px; display: inline-block;">На главную</a>
         @if(session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}

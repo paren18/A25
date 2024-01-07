@@ -4,40 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отчет по выплатам</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        #report-container {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-            border: 1px solid #ddd;
-            padding: 10px;
-            border-radius: 5px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/sum.css">
 </head>
 <body>
 
 <div id="report-container">
 
 </div>
+
+
 
 <script>
     function fetchData() {
@@ -52,6 +27,7 @@
                 });
 
                 html += '</ul>';
+                html +='<a href="{{ route('welcome') }}" style="text-decoration: none; padding: 10px 20px; background-color: green; color: #fff; border-radius: 5px; display: inline-block;">На главную</a>';
 
                 document.getElementById('report-container').innerHTML = html;
             })

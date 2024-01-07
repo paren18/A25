@@ -6,22 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Начальная страница</title>
-    <style>
-        .form {
-            text-align: center;
-            display: grid;
-            padding-top: 10%;
-            padding-left: 30%;
-            padding-right: 30%;
-        }
+    <link rel="stylesheet" href="css/welcome.css">
 
-        .form button {
-            margin-bottom: 15px;
-            width: 80%;
-            height: 55px;
-        }
-    </style>
-    
 </head>
 <body>
 <div class="form">

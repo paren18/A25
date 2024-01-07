@@ -4,43 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Логин</title>
-<style>
-    form {
-        padding-top: 4%;
-        padding-left: 30%;
-        padding-right: 30%;
-    }
-
-    input[type=text], input[type=password] {
-        width: 100%;
-        padding: 15px;
-        margin: 5px 0 22px 0;
-        display: inline-block;
-        border: none;
-        background: #f1f1f1;
-    }
-
-    input[type=text]:focus, input[type=password]:focus {
-        background-color: #ddd;
-        outline: none;
-    }
-
-    /* Установите стиль для всех кнопок */
-    button {
-        background-color: #4CAF50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        cursor: pointer;
-        width: 100%;
-        opacity: 0.9;
-    }
-
-    button:hover {
-        opacity: 1;
-    }
-</style>
+    <link rel="stylesheet" href="css/hours.css">
 </head>
 <body>
 
@@ -58,6 +22,7 @@
         <div class="clearfix">
             <button type="submit" class="signupbtn">Вход</button>
         </div>
+        <a href="{{ route('welcome') }}" style="text-decoration: none; padding: 10px 20px; background-color: green; color: #fff; border-radius: 5px; display: inline-block;">На главную</a>
         @if(session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
@@ -74,6 +39,8 @@
             </div>
         @endif
     </div>
+
+
 </form>
 
 </body>

@@ -18,7 +18,7 @@ use App\Http\Controllers\SumController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');;
 
 Route::get('/employee', function () {
     return view('employee');
