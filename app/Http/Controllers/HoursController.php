@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class HoursController extends Controller
 {
+
     public function submitHours(Request $request)
     {
         try {

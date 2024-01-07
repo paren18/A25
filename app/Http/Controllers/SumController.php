@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 
 class SumController extends Controller
 {
+
     public function generateReport()
     {
         $reportData = DB::table('hours')

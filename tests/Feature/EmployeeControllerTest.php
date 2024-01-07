@@ -9,7 +9,6 @@ use App\Models\User;
 
 class EmployeeControllerTest extends TestCase
 {
-
     public function test_create()
     {
         $response = $this->post('/employees', [

@@ -8,7 +8,6 @@ use App\Models\HoursModel;
 
 class HoursControllerTest extends TestCase
 {
-
     public function test_submit_hours()
     {
         $userAttributes = [

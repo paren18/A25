@@ -44,6 +44,7 @@
         }
 
     </style>
+
 </head>
 <body>
 <form action="{{ url('/employees') }}" method="post">

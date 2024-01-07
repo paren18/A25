@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Логин</title>
-</head>
 <style>
     form {
         padding-top: 4%;
@@ -41,8 +40,8 @@
     button:hover {
         opacity: 1;
     }
-
 </style>
+</head>
 <body>
 
 <form class="form" action="{{ route('login') }}" method="post">
